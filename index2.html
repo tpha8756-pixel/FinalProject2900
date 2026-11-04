@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MSMC Faculty & Staff - Simon Says</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Main Header -->
+  <header>
+    <h1>Mount Saint Mary College</h1>
+    <h2>Faculty & Staff "Simon Says" Challenge</h2>
+  </header>
+
+  <main class="game-container">
+    <!-- Section 1: Custom Canvas Visual -->
+    <!-- Custom visual element required by project rubric -->
+    <section class="canvas-section">
+      <canvas id="msmc-canvas" width="200" height="200"></canvas>
+      <p class="canvas-caption">MSMC Interactive Crest (Rendered via HTML5 Canvas)</p>
+    </section>
+
+    <!-- Section 2: Game Controls & Status display -->
+    <section class="status-panel">
+      <div id="status-text">Click "Start Game" to begin!</div>
+      <div class="score-board">
+        <span>Round: <strong id="current-round">0</strong></span>
+        <span>High Score: <strong id="high-score">0</strong></span>
+      </div>
+      <button id="start-btn" class="primary-btn">Start Game</button>
+    </section>
+
+    <!-- Section 3: Simon Says Faculty Board (4 Quad Pads) -->
+    <section class="game-board" id="game-board">
+      <!-- Generated dynamically by JavaScript -->
+    </section>
+
+    <!-- Section 4: Game Instructions & Code Attribution -->
+    <section class="info-section">
+      <h3>How to Play</h3>
+      <ol>
+        <li>Click <strong>Start Game</strong> to start a new game session.</li>
+        <li>Watch the sequence of Mount Saint Mary College faculty members highlight.</li>
+        <li>When I shout Simon says you must do as I tell you too</li>
+        <li>If I dont say anything remain still don't do anything</li>
+        <li>You are out if caught following invalid command</li>     
+        <li>You are out if also caught refusing to do valid command</li> 
+    </ol>
+
+      <hr>
+
+      <h3>Attribution & Inspiration</h3>
+      <p>
+        Faculty data sourced from the official <a href="https://www.msmc.edu/directory/" target="_blank">MSMC Directory</a>.<br>
+        Game logic inspired by classical Simon Says memory game mechanics and MDN JavaScript documentation on Promises and HTML5 Canvas API.
+      </p>
+    </section>
+  </main>
+
+  <!-- ES6 Module Entry Point -->
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
