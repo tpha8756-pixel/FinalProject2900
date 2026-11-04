@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSMC Faculty & Staff Memory Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mount Saint Mary College</h1>
+        <h2>Faculty & Staff Concentration Game</h2>
+    </header>
+
+    <main>
+        <!-- Custom Canvas Visual for branding/animation -->
+        <section id="canvas-section">
+            <canvas id="bannerCanvas" width="600" height="100"></canvas>
+        </section>
+
+        <!-- Game Control Panel -->
+        <section id="control-panel">
+            <button id="startBtn">Start Game</button>
+            <div id="stats">
+                <span>Moves: <span id="moveCount">0</span></span>
+                <span>Matches: <span id="matchCount">0</span> / 6</span>
+            </div>
+        </section>
+
+        <!-- Dynamic Game Grid -->
+        <section id="game-grid" class="grid-container">
+            <!-- Cards will be injected dynamically via JavaScript -->
+        </section>
+    </main>
+
+    <!-- Load main app module with strict mode handling via JS modules -->
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
