@@ -68,7 +68,7 @@ export const FACULTY_DATA = [
     id: 9,
     name: "Dr. Mike Daven",
     title: "Associate Prof. of Math",
-    color: "#ff00bf",
+    color: "#00ccff",
     image: "images/MikeDaven.jpg"
   },
     {
