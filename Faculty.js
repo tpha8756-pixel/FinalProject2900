@@ -90,6 +90,6 @@ export const FACULTY_DATA = [
     name: "Prof. Pappalardo",
     title: "Former Associate Prof. Journalism",
     color: "#ff0404",
-    image: "images/LezaRevic.jpg"
+    image: "images/Pappalardo.jpg"
   },
 ];
