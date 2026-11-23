@@ -99,4 +99,11 @@ export const FACULTY_DATA = [
     color: "#ffc9c9",
     image: "images/McCaroll.jpg"
   },
+     {
+    id: 14, 
+    name: "Prof. Markell",
+    title: "Professor Emerita of Information Technology",
+    color: "#b7ff00",
+    image: "images/Markell.jpg"
+  },
 ];
