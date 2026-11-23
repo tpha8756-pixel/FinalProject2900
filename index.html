@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MSMC Faculty & Staff - Simon Says</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Main Header -->
+  <header>
+    <h1>Mount Saint Mary College</h1>
+    <h2>Faculty & Staff "Simon Says" Challenge</h2>
+  </header>
+
+  <main class="game-container">
+    <!-- Custom HTML5 Canvas Visual (Transformed & Animated) -->
+    <section class="canvas-section">
+      <canvas id="msmc-canvas" width="180" height="180"></canvas>
+      <p class="canvas-caption">MSMC Interactive Crest (HTML5 Canvas)</p>
+    </section>
+
+    <!-- Section 2: Game Controls & Status display -->
+    <section class="status-panel">
+      <div id="status-text">Press "Start Game" to begin!</div>
+      <div class="score-board">
+        <span>Round: <strong id="current-round">0</strong></span>
+        <span>High Score: <strong id="high-score">0</strong></span>
+      </div>
+      <button id="start-btn" class="primary-btn">Start Game</button>
+    </section>
+
+    <!-- Section 3: Simon Says Faculty Board (4 Quad Pads) -->
+    <section class="game-board" id="game-board">
+      <!-- Generated dynamically by JavaScript -->
+    </section>
+
+    <!-- Section 4: Game Instructions & Code Attribution -->
+    <section class="info-section">
+      <h3>How to Play</h3>
+      <ol>
+        <li>Click <strong>Start Game</strong> to start Round 1.</li>
+        <li>Watch carefully as one or more Mount Saint Mary College faculty pads light up in sequence.</li>
+        <li>Repeat the exact sequence by clicking the matching faculty pads in the same order.</li>
+        <li>Each round adds one new step to the pattern. Clicking a wrong pad ends the game.</li>
+    </ol>
+
+      <hr>
+
+      <h3>Attribution & Inspiration</h3>
+      <p>
+        Faculty names and titles sourced from the official 
+        <a href="https://www.msmc.edu/directory/" target="_blank" rel="noopener noreferrer">MSMC Directory</a>.<br>
+        Gameplay mechanics inspired by classic electronic Simon memory games (<a href="https://freesimon.org/" target="_blank" rel="noopener noreferrer">FreeSimon.org</a>) and MDN Web Docs for HTML5 Canvas and JavaScript Promises.
+      </p>
+    </section>
+  </main>
+
+  <!-- ES6 Module Entry Point -->
+  <script type="module" src="./sources/main.js"></script>
+</body>
+</html>
