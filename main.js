@@ -1,14 +1,14 @@
 'use strict';
 
-import { initCanvas } from './components/Canvas.js';
-import { SimonGameItself } from './components/SimonGameItself.js';
+import { initCanvas } from './canvas.js';
+import { SimonGame } from './simonGame.js';
 
-// Execute code after DOM is fully loaded
+/**
+ * Entry point: waits for the HTML DOM to finish loading, then starts
+ * the HTML5 Canvas animation and initializes the SimonGame controller.
+ */
 document.addEventListener('DOMContentLoaded', () => {
-  // Initialize HTML5 dynamic canvas element
   initCanvas();
-
-  // Instantiate and run the Simon Game engine
-  const game = new SimonGameItself ();
+  const game = new SimonGame();
   game.init();
 });
